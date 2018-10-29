@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Main = (props) => {
+const PostArea = (props) => {
   return (
     <div style={{
-      flex: 1,
-      height: '100vh',
+      float: 'left',
+      width: 'calc(100% - 738px)',
       overflow: 'auto'
     }} >
       <div style={{ padding: '20px' }} {...props} />
@@ -12,4 +12,4 @@ const Main = (props) => {
   )
 }
 
-export default Main;
+export default PostArea;

@@ -1,4 +1,5 @@
-import React from 'react'
+import Radium from 'radium';
+import React from 'react';
 
 const SidebatItem = (props) => {
   return (
@@ -6,9 +7,17 @@ const SidebatItem = (props) => {
       whiteSpace: 'nowrap',
       textOverflow: 'ellipsis',
       overflow: 'hidden',
-      padding: '5px 10px'
+      backgroundColor: '#dfedd6',
+      cursor: 'pointer',
+      padding: '20px',
+      ':hover': {
+        backgroundColor: "#cbe8ba"
+      },
+      ':focus': {
+        backgroundColor: "#cbe8ba"
+      }
     }} {...props} />
   )
 }
 
-export default SidebatItem;
+export default Radium(SidebatItem);

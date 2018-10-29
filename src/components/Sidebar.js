@@ -2,11 +2,11 @@ import React from 'react'
 
 const Sidebar = (props) => {
   return (
-    <div style={{
-      width: '33vw',
-      height: '100vh',
-      overflow: 'auto',
-      background: '#eee'
+    <aside style={{
+      width: '390px',
+      height: 'fit-content',
+      float: 'left',
+      background: '#dfedd6'
     }} {...props} />
   )
 }
